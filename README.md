@@ -1,2 +1,2 @@
 # weather-widget
-Weather widget for Conroe and Manchester
+Weather widget for Conroe
