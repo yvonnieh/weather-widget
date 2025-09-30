@@ -3,44 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Widget - Conroe & Manchester</title>
+    <title>Weather Widget - Conroe</title>
     <style>
         body {
             margin: 0;
             padding: 20px;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            background: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
-        .container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1200px;
-        }
-        .weather-item {
-            flex: 1;
-            min-width: 300px;
+        .weather-container {
+            width: 100%;
+            max-width: 600px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Conroe Weather -->
-        <div class="weather-item">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/30d31n95d46/conroe/?unit=us" data-font="Arial Black" data-days="3" data-basecolor="#fff" data-accent="#F9F8F7" data-textcolor="#000">Conroe, TX, USA</a>
-        </div>
-        
-        <!-- Manchester Weather (you can add this if you want both locations) -->
-        <div class="weather-item">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/42d99n71d45/manchester/?unit=us" data-font="Arial Black" data-days="3" data-basecolor="#fff" data-accent="#F9F8F7" data-textcolor="#000">Manchester, NH, USA</a>
-        </div>
+    <div class="weather-container">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/30d31n95d46/conroe/?unit=us" data-font="Arial Black" data-days="3" data-basecolor="fff" data-accent="F9F8F7" data-textcolor="000">Conroe, TX, USA</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
     </div>
-    
-    <!-- Weather Widget Script -->
-    <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget
+</body>
+</html>
