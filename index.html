@@ -7,20 +7,40 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background: #ffffff;
-            overflow: hidden;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            background: transparent;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        }
+        .weather-item {
+            flex: 1;
+            min-width: 300px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-        <div class="commonninja_component pid-e0313b74-dc1b-437f-a0ba-27e11d08891d"></div>
+        <!-- Conroe Weather -->
+        <div class="weather-item">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/30d31n95d46/conroe/?unit=us" data-font="Arial Black" data-days="3" data-basecolor="#fff" data-accent="#F9F8F7" data-textcolor="#000">Conroe, TX, USA</a>
+        </div>
+        
+        <!-- Manchester Weather (you can add this if you want both locations) -->
+        <div class="weather-item">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/42d99n71d45/manchester/?unit=us" data-font="Arial Black" data-days="3" data-basecolor="#fff" data-accent="#F9F8F7" data-textcolor="#000">Manchester, NH, USA</a>
+        </div>
     </div>
-</body>
-</html>
-
+    
+    <!-- Weather Widget Script -->
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget
